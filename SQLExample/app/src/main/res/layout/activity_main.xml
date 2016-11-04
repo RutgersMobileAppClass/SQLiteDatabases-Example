@@ -7,66 +7,63 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="top|center"
     android:orientation="vertical"
-    android:gravity="center|top"
-    tools:context="com.example.instructor.sqlexample.MainActivity">
+    tools:context="com.example.lanceuppercut.sqlexample.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SQLite Example!"
-        android:textSize="30dp"/>
+        android:text="SQLiteDB Example!"
+        android:textSize="30dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="HIT ME!"
+        android:onClick="startClick"/>
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TableRow>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TableRow
+            android:orientation="horizontal">
             <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ID"
-            android:textSize="20dp"
-                android:padding="20dp"
-                android:layout_weight="1"
-            />
+                android:text="ID"
+                android:textSize="20dp"
+                android:padding="30dp"
+                />
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="Word"
-                android:textSize="20dp"
-                android:layout_weight="2"
-                />
+                android:padding="20dp"
+                android:textSize="30dp"/>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Definition"
-                android:textSize="20dp"
-                android:layout_weight="3"
-                />
+                android:text="Word"
+                android:padding="20dp"
+                android:textSize="30dp"/>
         </TableRow>
-
         <TableRow>
             <ListView
-                android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/idList">
+
+        </ListView>
+            <ListView
                 android:layout_height="match_parent"
-                android:id="@+id/idList"
-                android:layout_weight="1">
+                android:layout_width="match_parent"
+                android:id="@+id/wordList">
+
             </ListView>
             <ListView
-                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/wordList"
-                android:layout_weight="2">
-            </ListView>
-            <ListView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/definitionList"
-                android:layout_weight="3">
+                android:id="@+id/defList">
+
             </ListView>
         </TableRow>
 
     </TableLayout>
-
 </LinearLayout>

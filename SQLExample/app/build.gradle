@@ -5,8 +5,8 @@ android {
     buildToolsVersion "24.0.2"
 
     defaultConfig {
-        applicationId "com.example.instructor.sqlexample"
-        minSdkVersion 15
+        applicationId "com.example.lanceuppercut.sqlexample"
+        minSdkVersion 14
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"

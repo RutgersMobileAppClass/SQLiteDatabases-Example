@@ -1,4 +1,4 @@
-package com.example.instructor.sqlexample;
+package com.example.lanceuppercut.sqlexample;
 
 import org.junit.Test;
 

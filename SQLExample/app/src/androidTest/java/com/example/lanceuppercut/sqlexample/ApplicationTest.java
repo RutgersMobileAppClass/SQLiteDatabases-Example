@@ -1,4 +1,4 @@
-package com.example.instructor.sqlexample;
+package com.example.lanceuppercut.sqlexample;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
